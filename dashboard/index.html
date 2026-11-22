@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar &middot; pre-token protocols ranked by implied launch value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#board">Skip to the board</a>
+
+<header class="masthead">
+  <div class="brand">
+    <span class="mark" aria-hidden="true"><span></span></span>
+    <div class="brand-text">
+      <h1>Token Radar</h1>
+      <p class="tagline">Protocols still to launch a token, ranked by what that launch would be worth today.</p>
+    </div>
+  </div>
+  <div class="meta" id="meta"></div>
+</header>
+
+<nav class="tabs" id="tabs" role="tablist" aria-label="Views">
+  <button type="button" role="tab" id="tab-board" data-tab="board" aria-selected="true" aria-controls="board">Board</button>
+  <button type="button" role="tab" id="tab-validation" data-tab="validation" aria-selected="false" aria-controls="validation">Validation</button>
+  <button type="button" role="tab" id="tab-sectors" data-tab="sectors" aria-selected="false" aria-controls="sectors">Sectors</button>
+  <button type="button" role="tab" id="tab-live" data-tab="live" aria-selected="false" aria-controls="live">Live token</button>
+</nav>
+
+<main id="board" tabindex="-1" aria-busy="true">
+  <noscript>This page needs JavaScript: its whole dataset is in the data file beside it.</noscript>
+</main>
+
+<section id="detail" class="detail" hidden aria-label="Protocol detail" aria-live="polite"></section>
+
+<footer class="foot" id="foot"></footer>
+
+<script src="../data.js"></script>
+<script src="app.js"></script>
+<noscript></noscript>
+</body>
+</html>
