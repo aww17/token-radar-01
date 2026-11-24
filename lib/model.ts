@@ -116,6 +116,7 @@ export interface RadarRow {
   rank: number;
   slug: string;
   name: string;
+  in_watchlist: boolean;
   category: string | null;
   chains: string[];
   tvl_usd: number;
@@ -558,11 +559,12 @@ export function liveRows(snapshot: Snapshot, model: ModelConstants = MODEL): Liv
 }
 
 /** A board row's compact form for data.js, with the farm plan generated in the page. */
-export function radarRow(row: BoardRow): RadarRow {
+export function radarRow(row: BoardRow, inWatchlist: boolean): RadarRow {
   return {
     rank: row.rank,
     slug: row.slug,
     name: row.name,
+    in_watchlist: inWatchlist,
     category: row.category,
     chains: row.chains,
     tvl_usd: row.tvl_usd,
@@ -596,7 +598,7 @@ export function buildRadar(snapshot: Snapshot, model: ModelConstants = MODEL): {
     fit,
     sectors: sectors.map((s) => ({ category: s.category, n: s.n, median_multiple: s.median_multiple, factor: s.factor })),
     validation: VALIDATION,
-    rows: board.map(radarRow),
+    rows: board.map((r) => radarRow(r, snapshot.watchlist.includes(r.slug))),
     live,
   };
   return { board, radar };

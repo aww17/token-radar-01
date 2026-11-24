@@ -146,6 +146,7 @@
       var a = el('a', '', r.name);
       a.href = '#p=' + encodeURIComponent(r.slug);
       tdSlug.appendChild(a);
+      if (r.in_watchlist) tdSlug.appendChild(el('span', 'badge wl', 'Watchlist'));
 
       var tdCat = el('td');
       tdCat.appendChild(catChip(r.category));

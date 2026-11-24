@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/token-radar-01/aww17/token-radar-01/rank.svg)](https://make.fun/c/token-radar-01)
 [![reward](https://make.fun/badge/token-radar-01/aww17/token-radar-01/reward.svg)](https://make.fun/c/token-radar-01)
 
-A static web dashboard ranking protocols that record no token by their implied launch value. Entry for the [token-radar-01](https://make.fun/c/token-radar-01) bounty on make.fun.
+A static web dashboard ranking protocols that record no token by their implied launch value. Entry for the [token-radar-01](https://make.fun/c/token-radar-01) bounty on make.fun — bounty page: [token-radar-01](https://make.fun/bounty/token-radar-01) ($1,325 in USDC).
 
 ## What it does
 

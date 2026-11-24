@@ -140,6 +140,7 @@ td.num, th.num { text-align: right; font-family: var(--mono); white-space: nowra
 
 .badge { font-size: 11px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--dim); }
 .badge.early { border-color: rgba(111,214,176,0.4); color: var(--accent); }
+.badge.wl { border-color: rgba(111,214,176,0.4); color: var(--accent); margin-left: 6px; }
 
 .detail { max-width: 1280px; margin: 0 auto; padding: 0 var(--s6) var(--s6); }
 .detail[hidden] { display: none; }
